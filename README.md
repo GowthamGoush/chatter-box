@@ -18,6 +18,12 @@ Chatter Box is a web application that mimics the WhatsApp UI, allowing users to 
 - **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
 - **MUI (Material-UI)**: A popular React UI framework.
 
+## Screenshots
+
+### Chat Screen
+
+![Chat Screen](screenshots/chat.png)
+
 ## How to Run
 
 ### Prerequisites
