@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: theme("colors.color1");
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande",
+      "Arial", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar {
+    scrollbar-color: grey white;
+    scrollbar-width: thin;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #374045;
+  }
+
+  /* Custom radial gradient backgrounds */
+  .MessageActions {
+    background: radial-gradient(
+      at top right,
+      rgba(0, 92, 75, 1) 60%,
+      rgba(0, 92, 75, 0) 80%
+    );
+  }
+
+  .MessageActionsLeft {
+    background: radial-gradient(
+      at top right,
+      rgba(32, 44, 51, 1) 60%,
+      rgba(32, 44, 51, 0) 80%
+    );
+  }
+
+  /* Text Line Clamp */
+  .TextLineClamp1 {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  /* Basic Menu Styles */
+  #basic-menu .MuiPopover-paper {
+    @apply bg-[#233138] text-[white] rounded-none;
+  }
+
+  #basic-menu .MuiPopover-paper ul li {
+    @apply font-sans;
+  }
+
+  #basic-menu .MuiPopover-paper ul li:hover {
+    @apply bg-[#182229];
+  }
+}
